@@ -190,6 +190,7 @@
             Controls.Add(resultTextBox);
             Controls.Add(analyzeButton);
             DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "TestDocFabri";
             Text = "Fabrizio's Magic";
             Load += TestDocFabri_Load;

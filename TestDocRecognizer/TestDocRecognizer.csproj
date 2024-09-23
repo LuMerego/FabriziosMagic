@@ -40,6 +40,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Media\arcieribresciani-logo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Media\arcieribresciani-logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Media\loading-wtf.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Media\Rihanna - Take A Bow.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

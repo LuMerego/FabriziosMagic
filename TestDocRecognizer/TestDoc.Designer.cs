@@ -93,7 +93,7 @@
             label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
             label1.Location = new Point(289, 62);
             label1.Name = "label1";
-            label1.Size = new Size(79, 20);
+            label1.Size = new Size(100, 25);
             label1.TabIndex = 4;
             label1.Text = "Anteprima";
             label1.Click += label1_Click;
@@ -104,7 +104,7 @@
             label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
             label2.Location = new Point(1195, 62);
             label2.Name = "label2";
-            label2.Size = new Size(87, 20);
+            label2.Size = new Size(109, 25);
             label2.TabIndex = 5;
             label2.Text = "Dati estratti";
             // 
@@ -124,7 +124,7 @@
             textBox1.Location = new Point(374, 13);
             textBox1.Name = "textBox1";
             textBox1.RightToLeft = RightToLeft.No;
-            textBox1.Size = new Size(150, 23);
+            textBox1.Size = new Size(150, 27);
             textBox1.TabIndex = 7;
             textBox1.Text = "Domanda_1";
             // 
@@ -132,7 +132,7 @@
             // 
             textBox2.Location = new Point(699, 12);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(279, 23);
+            textBox2.Size = new Size(279, 27);
             textBox2.TabIndex = 8;
             textBox2.Text = "https://formiscrizioni.cognitiveservices.azure.com/";
             // 
@@ -141,7 +141,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(256, 16);
             label3.Name = "label3";
-            label3.Size = new Size(104, 15);
+            label3.Size = new Size(133, 20);
             label3.TabIndex = 9;
             label3.Text = "Modello utilizzato:";
             // 
@@ -150,7 +150,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(556, 16);
             label4.Name = "label4";
-            label4.Size = new Size(131, 15);
+            label4.Size = new Size(163, 20);
             label4.TabIndex = 10;
             label4.Text = "EndPoint Azure Service:";
             // 
@@ -159,7 +159,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(984, 16);
             label5.Name = "label5";
-            label5.Size = new Size(50, 15);
+            label5.Size = new Size(63, 20);
             label5.TabIndex = 11;
             label5.Text = "Api Key:";
             // 
@@ -167,7 +167,7 @@
             // 
             textBox3.Location = new Point(1064, 13);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(218, 23);
+            textBox3.Size = new Size(218, 27);
             textBox3.TabIndex = 12;
             textBox3.Text = "9182d6cd106c49dcbecf162758e53861";
             // 

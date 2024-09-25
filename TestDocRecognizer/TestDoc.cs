@@ -22,6 +22,21 @@ namespace TestDocRecognizer
         {
             InitializeComponent();
             this.Load += MainForm_Load; // Evento per caricamento form
+            this.MouseWheel += new MouseEventHandler(MainForm_MouseWheel);
+        }
+
+        private void MainForm_MouseWheel(object sender, MouseEventArgs e)
+        {
+            //MessageBox.Show("Mouse wheel");
+            if (e.Delta >1)
+            {
+                ZoomInOut(false);
+            }
+            else
+            {
+                ZoomInOut(true);
+            }
+            
         }
 
         // Metodo per avviare la canzone all'apertura della form
@@ -31,7 +46,7 @@ namespace TestDocRecognizer
             {
                 // Rihanna on the beat
                 soundPlayer = new SoundPlayer("Media/Rihanna - Take A Bow.wav"); 
-                soundPlayer.PlayLooping(); 
+             //   soundPlayer.PlayLooping(); 
             }
             catch
             { 
@@ -86,7 +101,7 @@ namespace TestDocRecognizer
                 pdf.LoadFromFile(filePath);
 
                 // Converte la prima pagina del PDF in immagine Bitmap, se sono più pagine ti attacchi :)
-                Stream image = pdf.SaveAsImage(1, PdfImageType.Bitmap);
+                Stream image = pdf.SaveAsImage(0, PdfImageType.Bitmap);
                 //setta picturebox con immagine generata
                 pictureBox.Image = Image.FromStream(image);
             });
@@ -141,7 +156,25 @@ namespace TestDocRecognizer
             return resultText;
         }
 
+        private void ZoomInOut(bool zoom)
+        {
+            //Zoom ratio by which the images will be zoomed by default
+            int zoomRatio = 10;
+            //Set the zoomed width and height
+            int widthZoom = pictureBox.Width * zoomRatio / 100;
+            int heightZoom = pictureBox.Height * zoomRatio / 100;
+            //zoom = true --> zoom in
+            //zoom = false --> zoom out
+            if (!zoom)
+            {
+                widthZoom *= -1;
+                heightZoom *= -1;
+            }
+            //Add the width and height to the picture box dimensions
+            pictureBox.Width += widthZoom;
+            pictureBox.Height += heightZoom;
 
+        }
 
         private void TestDocFabri_Load(object sender, EventArgs e)
         {

@@ -42,6 +42,8 @@
             label4 = new Label();
             label5 = new Label();
             textBox3 = new TextBox();
+            button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -63,7 +65,7 @@
             resultTextBox.Multiline = true;
             resultTextBox.Name = "resultTextBox";
             resultTextBox.ScrollBars = ScrollBars.Vertical;
-            resultTextBox.Size = new Size(571, 741);
+            resultTextBox.Size = new Size(571, 801);
             resultTextBox.TabIndex = 2;
             // 
             // analyzeButton
@@ -82,7 +84,7 @@
             pictureBox.BorderStyle = BorderStyle.FixedSingle;
             pictureBox.Location = new Point(12, 89);
             pictureBox.Name = "pictureBox";
-            pictureBox.Size = new Size(665, 737);
+            pictureBox.Size = new Size(908, 797);
             pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox.TabIndex = 1;
             pictureBox.TabStop = false;
@@ -91,7 +93,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.Location = new Point(289, 62);
+            label1.Location = new Point(478, 66);
             label1.Name = "label1";
             label1.Size = new Size(79, 20);
             label1.TabIndex = 4;
@@ -111,7 +113,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(224, 283);
+            pictureBox1.Location = new Point(374, 355);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(220, 220);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -121,10 +123,10 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(374, 13);
+            textBox1.Location = new Point(410, 12);
             textBox1.Name = "textBox1";
             textBox1.RightToLeft = RightToLeft.No;
-            textBox1.Size = new Size(150, 23);
+            textBox1.Size = new Size(104, 23);
             textBox1.TabIndex = 7;
             textBox1.Text = "Domanda_1";
             // 
@@ -171,11 +173,33 @@
             textBox3.TabIndex = 12;
             textBox3.Text = "9182d6cd106c49dcbecf162758e53861";
             // 
+            // button1
+            // 
+            button1.Location = new Point(764, 63);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 13;
+            button1.Text = "<";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(845, 63);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 14;
+            button2.Text = ">";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // TestDocFabri
             // 
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1527, 838);
+            ClientSize = new Size(1527, 899);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(textBox3);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -212,5 +236,7 @@
         private Label label4;
         private Label label5;
         private TextBox textBox3;
+        private Button button1;
+        private Button button2;
     }
 }
